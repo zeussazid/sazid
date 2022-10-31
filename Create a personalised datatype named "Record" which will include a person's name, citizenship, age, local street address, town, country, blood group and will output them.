@@ -1,0 +1,43 @@
+#include<iostream>
+ using namespace std;
+ struct record{
+     char name[100];
+     int age;
+     char country[30];
+     char town[30];
+     char citizenship[30];
+     char blood_group[30];
+     char local_street[30];
+ };
+ 
+ int main()
+ {
+    cout<<"Person details: "<<endl;
+    record p1;
+    cout<<"Enter person name"<<endl;
+    //cin>>p1.name;
+    cin.getline(p1.name,100);
+    cout<<"Enter person age"<<endl;
+    cin>>p1.age;
+    cout<<"Enter person country"<<endl;
+    cin>>p1.country;
+       cout<<"Enter person town"<<endl;
+    cin>>p1.town;
+        cout<<"Enter person citizenship"<<endl;
+    cin>>p1.citizenship;
+      cout<<"Enter person blood_group"<<endl;
+    cin>>p1.blood_group;
+     cout<<"Enter person local_street"<<endl;
+    cin>>p1.local_street;
+ 
+ 
+ 
+    cout<<"Person details are as follows: "<<endl;
+    cout<<"Person Name: "<<p1.name<<endl;
+    cout<<"Person Age: "<<p1.age<<endl;
+    cout<<"Person country: "<<p1.country;
+    cout<<"Person town: "<<p1.town;
+    cout<<"Person citizenship: "<<p1.citizenship;
+    cout<<"Person blood_group: "<<p1.blood_group;
+    cout<<"Person local_street: "<<p1.local_street;
+ }
