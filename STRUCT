@@ -1,0 +1,30 @@
+#include<iostream>
+
+using namespace std;
+
+struct person{
+char name[100];
+int age;
+double salary;
+
+};
+
+
+int main()
+{
+    cout<<"Person details: "<<endl;
+    person p1;
+    cout<<"Enter person name"<<endl;
+    //cin>>p1.name;
+    cin.getline(p1.name,100);
+    cout<<"Enter person age"<<endl;
+    cin>>p1.age;
+    cout<<"Enter person salary"<<endl;
+    cin>>p1.salary;
+
+
+    cout<<"Person details are as follows: "<<endl;
+    cout<<"Person Name: "<<p1.name<<endl;
+    cout<<"Person Age: "<<p1.age<<endl;
+    cout<<"Person Salary: "<<p1.salary;
+}
